@@ -1,0 +1,75 @@
+/* General navbar styling */
+.navbar {
+    background-color: #ff8fa3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ffe5ec;
+  }
+  
+  /* Mobile icon hidden by default */
+  .mobile-menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Mobile styling */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .nav-links-mobile {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      background-color: #ff8fa3;
+      padding: 10px 0;
+      list-style: none;
+    }
+  
+    .nav-links-mobile li {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .mobile-menu-icon {
+      display: block;
+    }
+  }
+  
