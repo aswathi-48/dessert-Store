@@ -1,0 +1,19 @@
+.slider-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    height: 300px;
+  }
+  
+  .slide {
+    min-width: 100%;
+    scroll-snap-align: start;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
