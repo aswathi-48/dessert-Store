@@ -259,3 +259,46 @@
     transform: translateY(-5px);
   }
   
+
+  .next-menu {
+    padding: 60px 20px;
+    background-color: #fff7f0;
+    text-align: center;
+  }
+  
+  .next-menu h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #c85a54;
+  }
+  
+  .menu-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .menu-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 15px;
+    width: 220px;
+    transition: transform 0.2s;
+  }
+  
+  .menu-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .menu-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .menu-card h3 {
+    margin-top: 10px;
+    color: #333;
+  }
+  
