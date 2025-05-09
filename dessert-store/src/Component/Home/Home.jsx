@@ -94,10 +94,15 @@
 // export default Home;
 
 
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './Home.css';
 
 const Home = () => {
+    useEffect(() => {
+        AOS.init({ duration: 1000 });
+      }, []);
   return (
     <div className="home-page">
       {/* Hero Section */}
@@ -169,6 +174,23 @@ const Home = () => {
     </div>
   </div>
 </section>
+
+{/* Special Section */}
+<section className="special-section">
+  <div className="special-container">
+    <div className="special-image" data-aos="fade-right">
+      <img src="/Images/special-dessert.jpg" alt="Special Dessert" />
+    </div>
+    <div className="special-content" data-aos="fade-left">
+      <h2>Special Treat of the Month</h2>
+      <p>
+        Indulge in our exclusive Red Velvet Cheesecake — a perfect blend of creaminess and richness topped with luscious strawberries. Limited time only!
+      </p>
+      <button className="order-btn">Order Now</button>
+    </div>
+  </div>
+</section>
+
 
     </div>
   );
