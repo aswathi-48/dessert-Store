@@ -4,7 +4,7 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const slides = [
   {
-    image: '/Images/joyful-vT5xrj3z1OE-unsplash.jpg',
+    image: '/Images/cake.jpg',
     title: 'Delicious Cakes',
     description: 'Made fresh every day with love!'
   },
