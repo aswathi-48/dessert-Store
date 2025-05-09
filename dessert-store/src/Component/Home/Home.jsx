@@ -121,6 +121,8 @@ const Home = () => {
           <img src="/Images/desserts6.jpg" alt="Cake5" className="marquee-img" />
           <img src="/Images/desserts7.jpg" alt="Cake5" className="marquee-img" />
           <img src="/Images/desserts8.jpg" alt="Cake5" className="marquee-img" />
+          <img src="/Images/desser9.jpg" alt="Cake5" className="marquee-img" />
+
 
 
         </marquee>
@@ -144,6 +146,30 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Next Menu Section */}
+<section className="next-menu">
+  <h2>More Treats Coming Soon</h2>
+  <div className="menu-items">
+    <div className="menu-card">
+      <img src="/Images/blue3.jpg" alt="New Dessert 1" />
+      <h3>Blueberry Tart</h3>
+    </div>
+    <div className="menu-card">
+      <img src="/Images/blue2.jpg" alt="New Dessert 2" />
+      <h3>Lemon Cheesecake</h3>
+    </div>
+    <div className="menu-card">
+      <img src="/Images/Macarons2.jpg" alt="New Dessert 3" />
+      <h3>Macarons</h3>
+    </div>
+    <div className="menu-card">
+      <img src="/Images/strawberry2.jpg" alt="New Dessert 3" />
+      <h3>Strawberry Cake</h3>
+    </div>
+  </div>
+</section>
+
     </div>
   );
 };
