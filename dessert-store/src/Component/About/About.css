@@ -263,12 +263,12 @@ html {
     line-height: 1.6;
 }
 
-.story-content .image {
+.story-content .video {
     flex: 1;
-    max-width: 400px;
+    max-width: 800px;
 }
 
-.story-content .image img {
+.story-content .video video {
     width: 100%;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
