@@ -40,7 +40,7 @@ const About = () => {
             {/* Video Section */}
             <section className="video-section">
                 <video autoPlay loop muted className="bg-video">
-                    <source src="/Videos/video.mp4" type="video/mp4" />
+                    <source src="/Videos/video2.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 <div className="video-overlay">
@@ -51,24 +51,34 @@ const About = () => {
             </section>
 
             {/* Dessert Store Section */}
-            <section className="dessert-section" ref={dessertRef}>
-                <h2 className="section-title" data-aos="fade-up">Welcome to Our Dessert Store</h2>
-                <div className="dessert-content">
-                    <div className="video-box" data-aos="fade-right">
-                        <video autoPlay muted loop controls className="dessert-video">
-                            <source src="/Videos/video2.mp4" type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
-
-                    </div>
-                    <div className="text-box" data-aos="fade-left">
-                        <h3>Delicious Moments Await</h3>
-                        <p>
-                            From rich chocolate cakes to fruity pastries, our store offers a wide variety of handmade desserts that satisfy every sweet tooth. We blend tradition with creativity to serve joy in every bite.
-                        </p>
-                    </div>
+            
+            <h1 className='sweet'>SWEET DELIGHTS</h1>
+            <section class="moments-section">
+                {/* <!-- Left: Image with overlay text --> */}
+                <div className="video-container">
+                    <video src="/Videos/video.mp4" loop autoPlay muted></video>
+                    <h3><b>Desserts</b></h3>
                 </div>
+
+
+                {/* <!-- Right: Text Content --> */}
+                <div class="text-content">
+                    <h3>WE SERVE <br /> SWEET DELIGHTS</h3>
+                    <p>
+                        At Sweet Moments, we craft delicious desserts that turn every bite into a celebration.
+                        From handcrafted cakes to artisanal pastries, our treats are made with love and the finest ingredients.
+                    </p>
+                    <p>
+                        Whether you're marking a special occasion or simply treating yourself, our desserts are designed to satisfy
+                        your cravings and create joyful memories that linger long after the last bite.
+                    </p>
+                    <button>Explore Our Menu</button>
+                </div>
+
             </section>
+
+
+
         </div>
     );
 };
