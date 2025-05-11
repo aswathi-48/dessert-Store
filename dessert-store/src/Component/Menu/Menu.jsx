@@ -1,42 +1,48 @@
 import React from 'react';
-import './Menu.css'; // Optional for styling
+import './Menu.css';
+
+const dessertItems = [
+    {
+        name: "Chocolate Lava Cake",
+        price: "$6.99",
+        image: "/Images/lava-cake.jpg",
+        description: "Warm chocolate cake with gooey molten center.",
+    },
+    {
+        name: "Strawberry Cheesecake",
+        price: "$5.99",
+        image: "/Images/cheesecake.jpg",
+        description: "Creamy cheesecake topped with fresh strawberries.",
+    },
+    {
+        name: "Macarons Box",
+        price: "$9.99",
+        image: "/Images/macarons.jpg",
+        description: "Colorful French macarons with assorted flavors.",
+    },
+    {
+        name: "Tiramisu",
+        price: "$7.50",
+        image: "/Images/tiramisu.jpg",
+        description: "Classic Italian dessert with coffee and mascarpone.",
+    },
+];
 
 const Menu = () => {
-    const desserts = [
-        { name: 'Chocolate Cake', image: '/Images/chocolate-cake.jpg' },
-        { name: 'Strawberry Tart', image: '/Images/strawberry-tart.jpg' },
-        { name: 'Macarons', image: '/Images/macarons.jpg' },
-        { name: 'Cheesecake', image: '/Images/cheesecake.jpg' },
-        { name: 'Lemon Meringue Pie', image: '/Images/lemon-meringue.jpg' },
-        { name: 'Tiramisu', image: '/Images/tiramisu.jpg' },
-        { name: 'Brownies', image: '/Images/brownies.jpg' },
-        { name: 'Cupcakes', image: '/Images/cupcakes.jpg' },
-        { name: 'Eclairs', image: '/Images/eclairs.jpg' },
-        { name: 'Donuts', image: '/Images/donuts.jpg' },
-        { name: 'Fruit Tart', image: '/Images/fruit-tart.jpg' },
-        { name: 'Ice Cream Sundae', image: '/Images/sundae.jpg' },
-        { name: 'Red Velvet Cake', image: '/Images/red-velvet.jpg' },
-        { name: 'Banana Split', image: '/Images/banana-split.jpg' },
-        { name: 'Churros', image: '/Images/churros.jpg' },
-        { name: 'Creme Brulee', image: '/Images/creme-brulee.jpg' },
-        { name: 'Mousse Cups', image: '/Images/mousse.jpg' },
-        { name: 'Baklava', image: '/Images/baklava.jpg' },
-        { name: 'Panna Cotta', image: '/Images/panna-cotta.jpg' },
-        { name: 'Pumpkin Pie', image: '/Images/pumpkin-pie.jpg' },
-    ];
-    
     return (
-        <div className="menu-page">
-            <h1>Our Dessert Menu</h1>
-            <div className="dessert-grid">
-                {desserts.map((item, index) => (
-                    <div key={index} className="dessert-card">
+        <section className="menu-section">
+            <h2>Our Dessert Menu</h2>
+            <div className="menu-grid">
+                {dessertItems.map((item, index) => (
+                    <div key={index} className="menu-item">
                         <img src={item.image} alt={item.name} />
                         <h3>{item.name}</h3>
+                        <p className="price">{item.price}</p>
+                        <p className="description">{item.description}</p>
                     </div>
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 
