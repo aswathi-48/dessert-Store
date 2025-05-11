@@ -273,3 +273,28 @@ html {
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
+
+.story-section h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #d94f4f; /* A strong dessert-inspired color */
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+
+.story-section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #d94f4f;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+.story-section h2 {
+    font-family: 'Playfair Display', serif;
+}
