@@ -131,7 +131,7 @@ const About = () => {
             {/* Video Section */}
             <section className="video-section">
                 <video autoPlay loop muted className="bg-video">
-                    <source src="/Videos/dessert-store.mp4" type="video/mp4" />
+                    <source src="/Videos/video2.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 <div className="video-overlay">
@@ -171,7 +171,8 @@ const About = () => {
     <h2>Our Story</h2>
     <div className="story-content">
         <div className="text">
-            <p>
+        <h1>Crafting Sweet Moments with Every Bite</h1>
+        <p>
                 At Sweet Moments, our journey began with a simple idea: to create desserts that not only satisfy the taste buds but also bring joy to those who enjoy them. 
                 We started with a passion for baking and a desire to share the sweetness of life with everyone. Today, we pride ourselves on using only the finest ingredients, 
                 combined with traditional and modern baking techniques to create masterpieces for every occasion.
@@ -181,10 +182,11 @@ const About = () => {
             </p>
         </div>
         <div className="video">
-            <video width="100%" >
-                <source src="/Videos/story.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
+        <video width="100%"  loop autoPlay muted>
+  <source src="/Videos/story2.mp4" type="video/mp4"  loop autoPlay muted />
+  Your browser does not support the video tag.
+</video>
+
         </div>
     </div>
 </section>
