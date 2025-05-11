@@ -32,6 +32,7 @@ import Home from './Component/Home/Home';
 import About from './Component/About/About';
 import Menu from './Component/Menu/Menu';
 import Layout from './Layout';
+import Contact from './Component/Contact/Contact';
 
 function App() {
   return (
@@ -41,6 +42,8 @@ function App() {
           <Route index element={<Home />} /> {/* path="/" */}
           <Route path="about" element={<About />} />
           <Route path="menu" element={<Menu />} />
+          <Route path="contact" element={<Contact />} />
+
         </Route>
       </Routes>
     </Router>
