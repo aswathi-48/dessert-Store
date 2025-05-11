@@ -1,32 +1,6 @@
 import React from 'react';
 import './Menu.css';
-
-const dessertItems = [
-    {
-        name: "Chocolate Lava Cake",
-        price: "$6.99",
-        image: "/Images/lava-cake.jpg",
-        description: "Warm chocolate cake with gooey molten center.",
-    },
-    {
-        name: "Strawberry Cheesecake",
-        price: "$5.99",
-        image: "/Images/cheesecake.jpg",
-        description: "Creamy cheesecake topped with fresh strawberries.",
-    },
-    {
-        name: "Macarons Box",
-        price: "$9.99",
-        image: "/Images/macarons.jpg",
-        description: "Colorful French macarons with assorted flavors.",
-    },
-    {
-        name: "Tiramisu",
-        price: "$7.50",
-        image: "/Images/tiramisu.jpg",
-        description: "Classic Italian dessert with coffee and mascarpone.",
-    },
-];
+import dessertItems from '../../data/desserts.json'
 
 const Menu = () => {
     return (
