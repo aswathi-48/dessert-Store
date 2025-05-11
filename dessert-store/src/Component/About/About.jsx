@@ -125,6 +125,7 @@ const About = () => {
     const handleWatchMore = () => {
         dessertRef.current?.scrollIntoView({ behavior: 'smooth' });
     };
+    
 
     return (
         <div>
