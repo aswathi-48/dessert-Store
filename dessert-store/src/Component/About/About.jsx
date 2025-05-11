@@ -168,23 +168,27 @@ const About = () => {
 
             {/* New Section: Our Story */}
             <section className="story-section">
-                <h2>Our Story</h2>
-                <div className="story-content">
-                    <div className="text">
-                        <p>
-                            At Sweet Moments, our journey began with a simple idea: to create desserts that not only satisfy the taste buds but also bring joy to those who enjoy them. 
-                            We started with a passion for baking and a desire to share the sweetness of life with everyone. Today, we pride ourselves on using only the finest ingredients, 
-                            combined with traditional and modern baking techniques to create masterpieces for every occasion.
-                        </p>
-                        <p>
-                            We believe that every dessert should tell a story, whether it's a birthday cake or a simple afternoon treat. Each creation is made with love, dedication, and the spirit of celebration.
-                        </p>
-                    </div>
-                    <div className="image">
-                        <img src="/Images/story.jpg" alt="Our Story" />
-                    </div>
-                </div>
-            </section>
+    <h2>Our Story</h2>
+    <div className="story-content">
+        <div className="text">
+            <p>
+                At Sweet Moments, our journey began with a simple idea: to create desserts that not only satisfy the taste buds but also bring joy to those who enjoy them. 
+                We started with a passion for baking and a desire to share the sweetness of life with everyone. Today, we pride ourselves on using only the finest ingredients, 
+                combined with traditional and modern baking techniques to create masterpieces for every occasion.
+            </p>
+            <p>
+                We believe that every dessert should tell a story, whether it's a birthday cake or a simple afternoon treat. Each creation is made with love, dedication, and the spirit of celebration.
+            </p>
+        </div>
+        <div className="video">
+            <video width="100%" >
+                <source src="/Videos/story.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</section>
+
         </div>
     );
 };
