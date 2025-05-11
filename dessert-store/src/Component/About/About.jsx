@@ -118,6 +118,7 @@
 
 import React, { useRef } from 'react';
 import './About.css';
+import { useNavigate } from 'react-router-dom';
 
 const About = () => {
     const dessertRef = useRef(null);
@@ -125,7 +126,12 @@ const About = () => {
     const handleWatchMore = () => {
         dessertRef.current?.scrollIntoView({ behavior: 'smooth' });
     };
-    
+    const navigate = useNavigate();
+
+const handleExploreMenu = () => {
+    navigate('/menu');
+};
+
 
     return (
         <div>
@@ -163,8 +169,8 @@ const About = () => {
                         Whether you're marking a special occasion or simply treating yourself, our desserts are designed to satisfy
                         your cravings and create joyful memories that linger long after the last bite.
                     </p>
-                    <button>Explore Our Menu</button>
-                </div>
+                    <button onClick={handleExploreMenu}>Explore Our Menu</button>
+                    </div>
             </section>
 
             {/* New Section: Our Story */}
