@@ -3,6 +3,7 @@ import Navbar from './Component/Navbar/Navbar'
 import Home from './Component/Home/Home'
 import About from './Component/About/About'
 import Menu from './Component/Menu/Menu'
+import Footer from './Component/footer/Footer'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
 
 
     </Routes>
+    <Footer/>
   </Router>
 
   )
