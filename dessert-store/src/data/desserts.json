@@ -2,7 +2,7 @@
     {
       "name": "Chocolate Lava Cake",
       "price": "$6.99",
-      "image": "/Images/lava-cake.jpg",
+      "image": "/Images/cheesecake.jpg",
       "description": "Warm chocolate cake with gooey molten center."
     },
     {
@@ -14,19 +14,19 @@
     {
       "name": "Macarons Box",
       "price": "$9.99",
-      "image": "/Images/macarons.jpg",
+      "image": "/Images/cheesecake.jpg",
       "description": "Colorful French macarons with assorted flavors."
     },
     {
       "name": "Tiramisu",
       "price": "$7.50",
-      "image": "/Images/tiramisu.jpg",
+      "image": "/Images/cheesecake.jpg",
       "description": "Classic Italian dessert with coffee and mascarpone."
     },
     {
       "name": "Red Velvet Cupcake",
       "price": "$3.99",
-      "image": "/Images/red-velvet.jpg",
+      "image": "/Images/cheesecake.jpg",
       "description": "Moist red velvet cupcake topped with cream cheese frosting."
     },
     {
