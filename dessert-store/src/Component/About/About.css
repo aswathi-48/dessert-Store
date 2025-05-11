@@ -226,3 +226,50 @@
 html {
     scroll-behavior: smooth;
 }
+
+
+/* New Section: Our Story */
+.story-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.story-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+}
+
+.story-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+@media (min-width: 768px) {
+    .story-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.story-content .text {
+    flex: 1;
+    max-width: 600px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.story-content .image {
+    flex: 1;
+    max-width: 400px;
+}
+
+.story-content .image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
