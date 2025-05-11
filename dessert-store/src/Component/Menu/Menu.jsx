@@ -11,8 +11,8 @@ const Menu = () => {
                     <div key={index} className="menu-item">
                         <img src={item.image} alt={item.name} />
                         <h3>{item.name}</h3>
-                        <p className="price">{item.price}</p>
-                        <p className="description">{item.description}</p>
+                        {/* <p className="price">{item.price}</p> */}
+                        {/* <p className="description">{item.description}</p> */}
                     </div>
                 ))}
             </div>
