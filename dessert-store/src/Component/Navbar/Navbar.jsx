@@ -18,7 +18,7 @@ const Navbar = () => {
         <li><Link to="/menu">Menu</Link></li>
         <li><a href="#specials">Specials</a></li> 
         <li><Link to="/about">About</Link></li>
-        <li><a href="#contact">Contact</a></li> 
+        <li><a href="/contact">Contact</a></li> 
       </ul>
       <button className="mobile-menu-icon" onClick={toggleMenu}>
         {isMobile ? <FaTimes /> : <FaBars />}
