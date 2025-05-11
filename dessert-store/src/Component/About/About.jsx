@@ -85,7 +85,7 @@ const About = () => {
             {/* Dessert Store Section */}
             <h1 className="sweet">SWEET DELIGHTS</h1>
 
-            <section className="moments-section" ref={dessertRef}> {/* Attach the ref here */}
+            <section className="moments-section" ref={dessertRef}> 
                 {/* Left: Image with overlay text */}
                 <div className="video-container">
                     <video src="/Videos/video.mp4" loop autoPlay muted></video>
