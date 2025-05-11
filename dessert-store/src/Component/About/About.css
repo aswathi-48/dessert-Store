@@ -222,3 +222,7 @@
     padding: 0px;
     font-family: sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}
