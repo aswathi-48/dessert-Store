@@ -108,7 +108,7 @@
 //                     <button>Explore Our Menu</button>
 //                 </div>
 //             </section>
-            
+
 //         </div>
 //     );
 // };
@@ -128,9 +128,9 @@ const About = () => {
     };
     const navigate = useNavigate();
 
-const handleExploreMenu = () => {
-    navigate('/menu');
-};
+    const handleExploreMenu = () => {
+        navigate('/menu');
+    };
 
 
     return (
@@ -151,7 +151,7 @@ const handleExploreMenu = () => {
             {/* Dessert Store Section */}
             <h1 className="sweet">SWEET DELIGHTS</h1>
 
-            <section className="moments-section" ref={dessertRef}> 
+            <section className="moments-section" ref={dessertRef}>
                 {/* Left: Image with overlay text */}
                 <div className="video-container">
                     <video src="/Videos/video.mp4" loop autoPlay muted></video>
@@ -170,33 +170,33 @@ const handleExploreMenu = () => {
                         your cravings and create joyful memories that linger long after the last bite.
                     </p>
                     <button onClick={handleExploreMenu}>Explore Our Menu</button>
-                    </div>
+                </div>
             </section>
 
             {/* New Section: Our Story */}
             <section className="story-section">
-    <h2>Our Story</h2>
-    <div className="story-content">
-        <div className="text">
-        <h1>Crafting Sweet Moments with Every Bite</h1>
-        <p>
-                At Sweet Moments, our journey began with a simple idea: to create desserts that not only satisfy the taste buds but also bring joy to those who enjoy them. 
-                We started with a passion for baking and a desire to share the sweetness of life with everyone. Today, we pride ourselves on using only the finest ingredients, 
-                combined with traditional and modern baking techniques to create masterpieces for every occasion.
-            </p>
-            <p>
-                We believe that every dessert should tell a story, whether it's a birthday cake or a simple afternoon treat. Each creation is made with love, dedication, and the spirit of celebration.
-            </p>
-        </div>
-        <div className="video">
-        <video width="100%"  loop autoPlay muted>
-  <source src="/Videos/story2.mp4" type="video/mp4"  loop autoPlay muted />
-  Your browser does not support the video tag.
-</video>
+                <h2>Our Story</h2>
+                <div className="story-content">
+                    <div className="text">
+                        <h1>Crafting Sweet Moments with Every Bite</h1>
+                        <p>
+                            At Sweet Moments, our journey began with a simple idea: to create desserts that not only satisfy the taste buds but also bring joy to those who enjoy them.
+                            We started with a passion for baking and a desire to share the sweetness of life with everyone. Today, we pride ourselves on using only the finest ingredients,
+                            combined with traditional and modern baking techniques to create masterpieces for every occasion.
+                        </p>
+                        <p>
+                            We believe that every dessert should tell a story, whether it's a birthday cake or a simple afternoon treat. Each creation is made with love, dedication, and the spirit of celebration.
+                        </p>
+                    </div>
+                    <div className="video">
+                        <video width="100%" loop autoPlay muted>
+                            <source src="/Videos/story2.mp4" type="video/mp4" loop autoPlay muted />
+                            Your browser does not support the video tag.
+                        </video>
 
-        </div>
-    </div>
-</section>
+                    </div>
+                </div>
+            </section>
 
         </div>
     );
