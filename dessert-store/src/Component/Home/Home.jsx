@@ -109,7 +109,13 @@ const Home = () => {
       <section className="hero">
         <h1>🍰 Welcome to SweetTreats</h1>
         <p>Delicious desserts made with love. Order your favorite now!</p>
-        <button className="order-btn">Explore Desserts</button>
+        <button className="order-btn" onClick={() => {
+  document.getElementById('featured')?.scrollIntoView({ behavior: 'smooth' });
+}}>
+  Explore Desserts
+</button>
+
+        {/* <button className="order-btn" id="featured">Explore Desserts</button> */}
       </section>
 
      
@@ -136,8 +142,8 @@ const Home = () => {
       </section>
 
       {/* Featured Desserts */}
-      <section className="featured">
-        <h2>Our Favorites</h2>
+      <section className="featured" id="featured">
+      <h2>Our Favorites</h2>
         <div className="dessert-grid">
           <div className="dessert-card">
             <img src="/Images/cake.jpg" alt="Cake" />
