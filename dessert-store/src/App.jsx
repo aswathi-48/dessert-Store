@@ -1,30 +1,3 @@
-// import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
-// import Navbar from './Component/Navbar/Navbar'
-// import Home from './Component/Home/Home'
-// import About from './Component/About/About'
-// import Menu from './Component/Menu/Menu'
-// import Footer from './Component/footer/Footer'
-
-
-// function App() {
-
-//   return (
-//     <Router>
-//     <Navbar />
-//     <Routes>
-//       <Route path="/" element={<Home />} />
-//       <Route path="/about" element={<About />} />
-//       <Route path="/menu" element={<Menu />} />
-
-
-//     </Routes>
-//     <Footer/>
-//   </Router>
-
-//   )
-// }
-
-// export default App
 
 
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
@@ -39,7 +12,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} /> {/* path="/" */}
+          <Route index element={<Home />} /> 
           <Route path="about" element={<About />} />
           <Route path="menu" element={<Menu />} />
           <Route path="contact" element={<Contact />} />
