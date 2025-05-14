@@ -8,6 +8,7 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setIsMobile(!isMobile);
+    
   };
 
   return (
