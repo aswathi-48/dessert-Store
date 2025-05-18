@@ -253,8 +253,9 @@ const specialsData = [
         image: '/Images/lava-cake.jpg',
         video: '../../../public/Videos/lava.mp4',
         description: 'Warm, rich chocolate cake with gooey center, served with vanilla ice cream.',
+        descriptions: 'A warm, rich chocolate cake with a gooey molten center, delicately baked to perfection and served alongside a scoop of creamy vanilla ice cream. The contrast of hot fudge-filled core and cool, smooth ice cream creates a symphony of flavors and textures in every bite.',
         price: '$6.99',
-        detailContent: 'Chocolate lava cake is a popular dessert featuring a soft cake exterior with a warm, gooey chocolate center.',
+        detailContent: 'Chocolate lava cake is an indulgent dessert that combines the fluffiness of sponge cake with the richness of molten chocolate. The cake is slightly crisp on the outside, while the inside flows with thick, luxurious ganache the moment it’s cut into. Paired with cold vanilla bean ice cream or fresh berries, it offers a delightful blend of warm and cold, soft and smooth. Ideal for romantic dinners or special celebrations, this dessert never fails to impress with its dramatic presentation and decadent flavor.',
     },
     {
         id: 2,
@@ -262,8 +263,9 @@ const specialsData = [
         image: '/Images/strawberry.jpg',
         video: '../../../public/Videos/cheese.mp4',
         description: 'Creamy cheesecake with fresh strawberries and a graham cracker crust.',
+        descriptions: 'A lusciously smooth and creamy cheesecake topped with hand-picked strawberries and a glossy strawberry glaze, all nestled atop a buttery, golden graham cracker crust. This dessert delivers a harmonious balance of tart fruitiness and rich sweetness.',
         price: '$7.49',
-        detailContent: 'Strawberry cheesecake combines sweet berries with a tangy creamy base — a classic dessert that everyone loves.',
+        detailContent: 'Our strawberry cheesecake is a celebration of flavors and textures. The velvety cheesecake filling is made with premium cream cheese, whipped to a silky consistency and infused with a hint of vanilla and lemon zest. The topping includes fresh, juicy strawberries layered over a homemade strawberry compote, adding a vibrant, fruity kick. The buttery graham cracker base provides a crunchy contrast, making each forkful an experience of smooth, sweet, and satisfying delight. Perfect for afternoon tea, festive dinners, or simply treating yourself.',
     },
     {
         id: 3,
@@ -271,8 +273,9 @@ const specialsData = [
         image: 'https://media.istockphoto.com/id/1184466833/photo/platter-of-multicolored-macaroons.jpg?s=612x612&w=0&k=20&c=uFlL01c3TPJzdRR4nuWOcmlExoSNJIm3V0Hez_cgnqw=',
         video: '/Videos/',
         description: 'A colorful assortment of French macarons in various flavors.',
+        descriptions: 'A vibrant and sophisticated assortment of handmade French macarons, featuring a rainbow of colors and a rich variety of flavors such as pistachio, lemon, raspberry, vanilla bean, chocolate ganache, and salted caramel.',
         price: '$8.99',
-        detailContent: 'French macarons are delicate pastries with a crisp shell and soft interior, available in many exciting flavors.',
+        detailContent: 'This macaron platter offers an elegant display of pastel-colored treats, each crafted using almond flour, egg whites, and a touch of artistry. Light and crisp on the outside with a chewy, flavorful filling inside, these macarons melt in your mouth. From the nutty earthiness of pistachio to the rich indulgence of chocolate ganache, every flavor is designed to delight your taste buds. Ideal for parties, high tea, or gifting, our macaron platter adds a touch of French sophistication to any occasion.',
     },
 ];
 
@@ -310,11 +313,11 @@ const Specials = () => {
                 <div ref={detailRef} className="dessert-details">
                     <div className="dessert-row top-detail">
                         <div className="dessert-img-box">
-                            <img src={selectedSpecial.image} alt={selectedSpecial.title} className="dessert-full-image" />
+                            <img src={selectedSpecial.image} alt={selectedSpecial.title} className="dessert-full-image" height={500}/>
                         </div>
                         <div className="dessert-info-box">
                             <h2>{selectedSpecial.title}</h2>
-                            <p className="dessert-info-summary">{selectedSpecial.description}</p>
+                            <p className="dessert-info-summary">{selectedSpecial.descriptions}</p>
                         </div>
                     </div>
 
