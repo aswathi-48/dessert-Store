@@ -313,7 +313,7 @@ const Specials = () => {
                 <div ref={detailRef} className="dessert-details">
                     <div className="dessert-row top-detail">
                         <div className="dessert-img-box">
-                            <img src={selectedSpecial.image} alt={selectedSpecial.title} className="dessert-full-image" height={500}/>
+                            <img src={selectedSpecial.image} alt={selectedSpecial.title} className="dessert-full-image" height={500} />
                         </div>
                         <div className="dessert-info-box">
                             <h2>{selectedSpecial.title}</h2>
@@ -326,10 +326,18 @@ const Specials = () => {
                             <p>{selectedSpecial.detailContent}</p>
                         </div>
                         <div className="dessert-video-box">
-                            <video width="100%" height="315"  autoPlay loop muted  >
+                            <video
+                                key={selectedSpecial.video} 
+                                width="100%"
+                                height="315"
+                                autoPlay
+                                loop
+                                muted
+                            >
                                 <source src={selectedSpecial.video} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
+
                         </div>
 
                     </div>
