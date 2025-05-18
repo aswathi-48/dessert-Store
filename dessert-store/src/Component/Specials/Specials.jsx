@@ -326,7 +326,7 @@ const Specials = () => {
                             <p>{selectedSpecial.detailContent}</p>
                         </div>
                         <div className="dessert-video-box">
-                            <video width="100%" height="315" controls autoPlay loop muted  >
+                            <video width="100%" height="315"  autoPlay loop muted  >
                                 <source src={selectedSpecial.video} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
