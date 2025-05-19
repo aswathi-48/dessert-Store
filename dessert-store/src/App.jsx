@@ -7,6 +7,7 @@ import Menu from './Component/Menu/Menu';
 import Layout from './Layout';
 import Contact from './Component/Contact/Contact';
 import Specials from './Component/Specials/Specials';
+import MenuDetails from './Component/Menu/MenuDetails';
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
           <Route path="menu" element={<Menu />} />
           <Route path="contact" element={<Contact />} />
           <Route path="specials" element={<Specials />} />
+          <Route path="/dessert/:name" element={<MenuDetails />} />
+
 
         </Route>
       </Routes>
