@@ -1,23 +1,10 @@
 [
-  {
-    "name": "Chocolate Lava Cake",
-    "price": "$6.99",
-    "image": "/Images/lava-cake.jpg",
-    "description": "Warm chocolate cake with gooey molten center.",
-    "ingredients": ["Dark Chocolate", "Butter", "Sugar", "Eggs", "Flour"],
-    "allergy_info": "Contains eggs, dairy, and gluten.",
-    "nutrition": {
-      "calories": 350,
-      "fat": "20g",
-      "carbs": "38g",
-      "protein": "4g"
+    {
+      "name": "Chocolate Lava Cake",
+      "price": "$6.99",
+      "image": "/Images/cheesecake.jpg",
+      "description": "Warm chocolate cake with gooey molten center."
     },
-    "reviews": [
-      { "user": "Alice", "comment": "Absolutely delicious!", "rating": 5 },
-      { "user": "John", "comment": "Too rich for me.", "rating": 3 }
-    ]
-  },
-  
     {
       "name": "Strawberry Cheesecake",
       "price": "$5.99",
