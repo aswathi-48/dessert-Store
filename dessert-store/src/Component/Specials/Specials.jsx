@@ -271,7 +271,7 @@ const specialsData = [
         id: 3,
         title: 'Macaron Platter',
         image: 'https://media.istockphoto.com/id/1184466833/photo/platter-of-multicolored-macaroons.jpg?s=612x612&w=0&k=20&c=uFlL01c3TPJzdRR4nuWOcmlExoSNJIm3V0Hez_cgnqw=',
-        video: '/Videos/',
+        video: '../../../public/Videos/mac.mp4',
         description: 'A colorful assortment of French macarons in various flavors.',
         descriptions: 'A vibrant and sophisticated assortment of handmade French macarons, featuring a rainbow of colors and a rich variety of flavors such as pistachio, lemon, raspberry, vanilla bean, chocolate ganache, and salted caramel.',
         price: '$8.99',
