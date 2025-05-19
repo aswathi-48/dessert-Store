@@ -1,105 +1,176 @@
 [
+ 
     {
       "name": "Chocolate Lava Cake",
       "price": "$6.99",
       "image": "/Images/cheesecake.jpg",
-      "description": "Warm chocolate cake with gooey molten center."
+      "description": "Warm chocolate cake with gooey molten center.",
+      
+      "reviews": [
+        { "user": "Alice", "comment": "Absolutely delicious!", "rating": 5 },
+        { "user": "John", "comment": "Too rich for me.", "rating": 3 }
+      ]
     },
+    
     {
       "name": "Strawberry Cheesecake",
       "price": "$5.99",
       "image": "/Images/cheesecake.jpg",
-      "description": "Creamy cheesecake topped with fresh strawberries."
+      "description": "Creamy cheesecake topped with fresh strawberries.",
+      "reviews": [
+        { "user": "Alice", "comment": "Absolutely delicious!", "rating": 5 },
+        { "user": "John", "comment": "Too rich for me.", "rating": 3 }
+      ]
     },
     {
       "name": "Macarons Box",
       "price": "$9.99",
       "image": "/Images/cheesecake.jpg",
-      "description": "Colorful French macarons with assorted flavors."
+      "description": "Colorful French macarons with assorted flavors.",
+      "reviews": [
+        { "user": "Alice", "comment": "Absolutely delicious!", "rating": 5 },
+        { "user": "John", "comment": "Too rich for me.", "rating": 3 }
+      ]
     },
     {
       "name": "Tiramisu",
       "price": "$7.50",
       "image": "/Images/cheesecake.jpg",
-      "description": "Classic Italian dessert with coffee and mascarpone."
+      "description": "Classic Italian dessert with coffee and mascarpone.",
+      "reviews": [
+        { "user": "Alice", "comment": "Absolutely delicious!", "rating": 5 },
+        { "user": "John", "comment": "Too rich for me.", "rating": 3 }
+      ]
     },
     {
       "name": "Red Velvet Cupcake",
       "price": "$3.99",
       "image": "/Images/cheesecake.jpg",
-      "description": "Moist red velvet cupcake topped with cream cheese frosting."
+      "description": "Moist red velvet cupcake topped with cream cheese frosting.",
+      "reviews": [
+        { "user": "Alice", "comment": "Absolutely delicious!", "rating": 5 },
+        { "user": "John", "comment": "Too rich for me.", "rating": 3 }
+      ]
     },
     {
       "name": "Banoffee Pie",
       "price": "$6.50",
       "image": "/Images/banoffee.jpg",
-      "description": "Delicious banana and toffee pie with whipped cream."
+      "description": "Delicious banana and toffee pie with whipped cream.",
+      "reviews": [
+        { "user": "Alice", "comment": "Absolutely delicious!", "rating": 5 },
+        { "user": "John", "comment": "Too rich for me.", "rating": 3 }
+      ]
     },
     {
       "name": "Mango Mousse",
       "price": "$4.50",
       "image": "/Images/mango-mousse.jpg",
-      "description": "Light and airy mango mousse topped with fresh mango chunks."
+      "description": "Light and airy mango mousse topped with fresh mango chunks.",
+      "reviews": [
+        { "user": "Alice", "comment": "Absolutely delicious!", "rating": 5 },
+        { "user": "John", "comment": "Too rich for me.", "rating": 3 }
+      ]
     },
     {
       "name": "Blueberry Tart",
       "price": "$5.25",
       "image": "/Images/blueberry-tart.jpg",
-      "description": "Fresh tart crust filled with blueberries and cream."
+      "description": "Fresh tart crust filled with blueberries and cream.",
+      "reviews": [
+        { "user": "Alice", "comment": "Absolutely delicious!", "rating": 5 },
+        { "user": "John", "comment": "Too rich for me.", "rating": 3 }
+      ]
     },
     {
       "name": "Chocolate Éclair",
       "price": "$4.99",
       "image": "/Images/eclair.jpg",
-      "description": "Choux pastry filled with vanilla cream and topped with chocolate glaze."
+      "description": "Choux pastry filled with vanilla cream and topped with chocolate glaze.",
+      "reviews": [
+        { "user": "Alice", "comment": "Absolutely delicious!", "rating": 5 },
+        { "user": "John", "comment": "Too rich for me.", "rating": 3 }
+      ]
     },
     {
       "name": "Fruit Pavlova",
       "price": "$6.25",
       "image": "/Images/pavlova.jpg",
-      "description": "Crispy meringue topped with whipped cream and fresh fruits."
+      "description": "Crispy meringue topped with whipped cream and fresh fruits.",
+      "reviews": [
+        { "user": "Alice", "comment": "Absolutely delicious!", "rating": 5 },
+        { "user": "John", "comment": "Too rich for me.", "rating": 3 }
+      ]
     },
     {
       "name": "Carrot Cake",
       "price": "$5.75",
       "image": "/Images/carrot-cake.jpg",
-      "description": "Moist carrot cake with walnuts and cream cheese frosting."
+      "description": "Moist carrot cake with walnuts and cream cheese frosting.",
+      "reviews": [
+        { "user": "Alice", "comment": "Absolutely delicious!", "rating": 5 },
+        { "user": "John", "comment": "Too rich for me.", "rating": 3 }
+      ]
     },
     {
       "name": "Oreo Cheesecake",
       "price": "$6.50",
       "image": "/Images/oreo-cheesecake.jpg",
-      "description": "Cheesecake loaded with Oreo chunks and cookie crust."
+      "description": "Cheesecake loaded with Oreo chunks and cookie crust.",
+      "reviews": [
+        { "user": "Alice", "comment": "Absolutely delicious!", "rating": 5 },
+        { "user": "John", "comment": "Too rich for me.", "rating": 3 }
+      ]
     },
     {
       "name": "Coconut Macaroons",
       "price": "$3.75",
       "image": "/Images/macaroons.jpg",
-      "description": "Sweet chewy macaroons made from shredded coconut."
+      "description": "Sweet chewy macaroons made from shredded coconut.",
+      "reviews": [
+        { "user": "Alice", "comment": "Absolutely delicious!", "rating": 5 },
+        { "user": "John", "comment": "Too rich for me.", "rating": 3 }
+      ]
     },
     {
       "name": "Chocolate Mousse",
       "price": "$4.99",
       "image": "/Images/choco-mousse.jpg",
-      "description": "Rich and creamy chocolate mousse topped with chocolate flakes."
+      "description": "Rich and creamy chocolate mousse topped with chocolate flakes.",
+      "reviews": [
+        { "user": "Alice", "comment": "Absolutely delicious!", "rating": 5 },
+        { "user": "John", "comment": "Too rich for me.", "rating": 3 }
+      ]
     },
     {
       "name": "Lemon Tart",
       "price": "$5.00",
       "image": "/Images/lemon-tart.jpg",
-      "description": "Tangy lemon curd in a crisp buttery shell."
+      "description": "Tangy lemon curd in a crisp buttery shell.",
+      "reviews": [
+        { "user": "Alice", "comment": "Absolutely delicious!", "rating": 5 },
+        { "user": "John", "comment": "Too rich for me.", "rating": 3 }
+      ]
     },
     {
       "name": "Cupcake Assortment",
       "price": "$8.99",
       "image": "/Images/cupcake-box.jpg",
-      "description": "Box of 6 assorted gourmet cupcakes."
+      "description": "Box of 6 assorted gourmet cupcakes.",
+      "reviews": [
+        { "user": "Alice", "comment": "Absolutely delicious!", "rating": 5 },
+        { "user": "John", "comment": "Too rich for me.", "rating": 3 }
+      ]
     },
     {
       "name": "Brownie Sundae",
       "price": "$7.75",
       "image": "/Images/brownie-sundae.jpg",
-      "description": "Warm brownie served with vanilla ice cream and fudge sauce."
+      "description": "Warm brownie served with vanilla ice cream and fudge sauce.",
+      "reviews": [
+        { "user": "Alice", "comment": "Absolutely delicious!", "rating": 5 },
+        { "user": "John", "comment": "Too rich for me.", "rating": 3 }
+      ]
     },
     {
       "name": "Creme Brulee",
