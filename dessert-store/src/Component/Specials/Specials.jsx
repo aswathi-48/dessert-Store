@@ -261,7 +261,7 @@ const specialsData = [
         id: 2,
         title: 'Strawberry Cheesecake',
         image: '/Images/strawberry.jpg',
-        video: '../../../public/Videos/cheese.mp4',
+        video: '../../../public/Videos/chee.mp4',
         description: 'Creamy cheesecake with fresh strawberries and a graham cracker crust.',
         descriptions: 'A lusciously smooth and creamy cheesecake topped with hand-picked strawberries and a glossy strawberry glaze, all nestled atop a buttery, golden graham cracker crust. This dessert delivers a harmonious balance of tart fruitiness and rich sweetness.',
         price: '$7.49',
