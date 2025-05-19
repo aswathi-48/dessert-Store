@@ -1,36 +1,13 @@
 .dessert-detail {
-    padding: 20px;
-    max-width: 700px;
+    max-width: 600px;
     margin: auto;
-    font-family: Arial, sans-serif;
-}
-
-.dessert-detail img {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .dessert-detail img {
     max-width: 100%;
-    border-radius: 10px;
-}
-
-.price {
-    font-size: 1.2rem;
-    color: #444;
-    margin: 10px 0;
-}
-
-.description {
-    margin-bottom: 15px;
-}
-
-.ingredients ul,
-.nutrition ul {
-    padding-left: 20px;
-}
-
-.reviews {
-    margin-top: 20px;
-    border-top: 1px solid #ccc;
-    padding-top: 10px;
-}
-
-.review {
-    margin-bottom: 10px;
-}
+    height: auto;
+    border-radius: 8px;
+  }
+  
