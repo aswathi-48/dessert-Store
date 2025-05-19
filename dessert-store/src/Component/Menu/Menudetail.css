@@ -1,0 +1,13 @@
+.dessert-detail {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .dessert-detail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
