@@ -8,6 +8,7 @@ import Layout from './Layout';
 import Contact from './Component/Contact/Contact';
 import Specials from './Component/Specials/Specials';
 import MenuDetails from './Component/Menu/MenuDetails';
+import Test from './Component/test/Test';
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
 
 
         </Route>
+        <Route path="/data" element={<Test />} />
+
       </Routes>
     </Router>
   );
