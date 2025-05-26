@@ -98,11 +98,20 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './Home.css';
+import { FaWhatsapp } from 'react-icons/fa';
+
 
 const Home = () => {
     useEffect(() => {
         AOS.init({ duration: 1000 });
       }, []);
+
+
+      // const phoneNumber = '7025595178';
+      // const message = 'Hello, I need help with...';
+      // const encodedMessage = encodeURIComponent(message);
+    
+
   return (
     <div className="home-page">
       {/* Hero Section */}
@@ -198,7 +207,14 @@ const Home = () => {
     </div>
   </div>
 </section>
-
+{/* <a
+      href={`https://wa.me/${phoneNumber}?text=${encodedMessage}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ color: 'green', fontSize: '30px' }}
+    >
+      <FaWhatsapp />
+    </a> */}
 
 
 
