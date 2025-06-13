@@ -102,32 +102,30 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 
 const Home = () => {
-    useEffect(() => {
-        AOS.init({ duration: 1000 });
-      }, []);
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
 
-      // const phoneNumber = '7025595178';
-      // const message = 'Hello, I need help with...';
-      // const encodedMessage = encodeURIComponent(message);
-    
+  // const phoneNumber = '7025595178';
+  // const message = 'Hello, I need help with...';
+  // const encodedMessage = encodeURIComponent(message);
+
 
   return (
     <div className="home-page">
       {/* Hero Section */}
-      <section className="hero">
-        <h1>🍰 Welcome to SweetTreats</h1>
-        <p>Delicious desserts made with love. Order your favorite now!</p>
-        <button className="order-btn" onClick={() => {
-  document.getElementById('featured')?.scrollIntoView({ behavior: 'smooth' });
-}}>
-  Explore Desserts
-</button>
+    <section className="hero">
+  <h1>🍰 Welcome to <span style={{ color: "#fff0f5", textShadow: "2px 2px #c0392b" }}>SweetTreats</span></h1>
+  <p>Delicious desserts crafted with love. From cupcakes to cheesecakes, we’ve got your sweet cravings covered.</p>
+  <button className="order-btn" onClick={() => {
+    document.getElementById('featured')?.scrollIntoView({ behavior: 'smooth' });
+  }}>
+    Explore Desserts
+  </button>
+</section>
 
-        {/* <button className="order-btn" id="featured">Explore Desserts</button> */}
-      </section>
 
-     
 
       {/* Scrolling Images */}
       <section className="marquee-section">
@@ -152,7 +150,7 @@ const Home = () => {
 
       {/* Featured Desserts */}
       <section className="featured" id="featured">
-      <h2>Our Favorites</h2>
+        <h2>Our Favorites</h2>
         <div className="dessert-grid">
           <div className="dessert-card">
             <img src="/Images/cake.jpg" alt="Cake" />
@@ -170,44 +168,44 @@ const Home = () => {
       </section>
 
       {/* Next Menu Section */}
-<section className="next-menu">
-  <h2>More Treats Coming Soon</h2>
-  <div className="menu-items">
-    <div className="menu-card">
-      <img src="/Images/blue3.jpg" alt="New Dessert 1" />
-      <h3>Blueberry Tart</h3>
-    </div>
-    <div className="menu-card">
-      <img src="/Images/blue2.jpg" alt="New Dessert 2" />
-      <h3>Lemon Cheesecake</h3>
-    </div>
-    <div className="menu-card">
-      <img src="/Images/Macarons2.jpg" alt="New Dessert 3" />
-      <h3>Macarons</h3>
-    </div>
-    <div className="menu-card">
-      <img src="/Images/strawberry2.jpg" alt="New Dessert 3" />
-      <h3>Strawberry Cake</h3>
-    </div>
-  </div>
-</section>
+      <section className="next-menu">
+        <h2>More Treats Coming Soon</h2>
+        <div className="menu-items">
+          <div className="menu-card">
+            <img src="/Images/blue3.jpg" alt="New Dessert 1" />
+            <h3>Blueberry Tart</h3>
+          </div>
+          <div className="menu-card">
+            <img src="/Images/blue2.jpg" alt="New Dessert 2" />
+            <h3>Lemon Cheesecake</h3>
+          </div>
+          <div className="menu-card">
+            <img src="/Images/Macarons2.jpg" alt="New Dessert 3" />
+            <h3>Macarons</h3>
+          </div>
+          <div className="menu-card">
+            <img src="/Images/strawberry2.jpg" alt="New Dessert 3" />
+            <h3>Strawberry Cake</h3>
+          </div>
+        </div>
+      </section>
 
-{/* Special Section */}
-<section className="special-section">
-  <div className="special-container">
-    <div className="special-image" data-aos="fade-right">
-      <img src="/Images/spcl2.jpg" alt="Special Dessert" />
-    </div>
-    <div className="special-content" data-aos="fade-left">
-      <h2>Special Treat of the Month</h2>
-      <p>
-        Indulge in our exclusive Red Velvet Cheesecake — a perfect blend of creaminess and richness topped with luscious strawberries. Limited time only!
-      </p>
-      <button className="order-btn">Order Now</button>
-    </div>
-  </div>
-</section>
-{/* <a
+      {/* Special Section */}
+      <section className="special-section">
+        <div className="special-container">
+          <div className="special-image" data-aos="fade-right">
+            <img src="/Images/spcl2.jpg" alt="Special Dessert" />
+          </div>
+          <div className="special-content" data-aos="fade-left">
+            <h2>Special Treat of the Month</h2>
+            <p>
+              Indulge in our exclusive Red Velvet Cheesecake — a perfect blend of creaminess and richness topped with luscious strawberries. Limited time only!
+            </p>
+            <button className="order-btn">Order Now</button>
+          </div>
+        </div>
+      </section>
+      {/* <a
       href={`https://wa.me/${phoneNumber}?text=${encodedMessage}`}
       target="_blank"
       rel="noopener noreferrer"
