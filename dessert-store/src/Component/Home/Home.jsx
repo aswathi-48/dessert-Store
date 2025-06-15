@@ -105,7 +105,26 @@ const Home = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
-
+ const featuredDesserts = [
+    {
+      id: 'chocolate-cake',
+      name: 'Chocolate Cake',
+      img: '/Images/cake.jpg',
+      price: 299,
+    },
+    {
+      id: 'vanilla-cupcake',
+      name: 'Vanilla Cupcake',
+      img: '/Images/cupcake2.jpg',
+      price: 149,
+    },
+    {
+      id: 'strawberry-icecream',
+      name: 'Strawberry Ice Cream',
+      img: '/Images/desserts4.jpg',
+      price: 199,
+    },
+  ];
 
   return (
     <div className="home-page">
@@ -147,7 +166,7 @@ const Home = () => {
       </section>
 
       {/* Featured Desserts */}
-      <section className="featured" id="featured">
+      {/* <section className="featured" id="featured">
         <h2>Our Favorites</h2>
         <div className="dessert-grid">
           <div className="dessert-card">
@@ -163,7 +182,24 @@ const Home = () => {
             <h3>Strawberry Ice Cream</h3>
           </div>
         </div>
-      </section>
+      </section> */}
+
+       <section className="featured" id="featured">
+      <h2>Our Favorites</h2>
+      <div className="dessert-grid">
+        {featuredDesserts.map((dessert) => (
+          <div
+            key={dessert.id}
+            className="dessert-card"
+            onClick={() => navigate(`/feature/${dessert.id}`, { state: dessert })}
+            style={{ cursor: 'pointer' }}
+          >
+            <img src={dessert.img} alt={dessert.name} />
+            <h3>{dessert.name}</h3>
+          </div>
+        ))}
+      </div>
+    </section>
 
       {/* Next Menu Section */}
       <section className="next-menu">
