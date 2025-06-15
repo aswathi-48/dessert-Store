@@ -9,6 +9,7 @@ import Contact from './Component/Contact/Contact';
 import Specials from './Component/Specials/Specials';
 import MenuDetails from './Component/Menu/MenuDetails';
 import Test from './Component/test/Test';
+import Feature from './Component/Home/Feature';
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
           <Route path="/dessert/:name" element={<MenuDetails />} />
         </Route>
         <Route path="/data" element={<Test />} />
-         {/* <Route path="/feature/:id" element={<Feature />}/> */}
+         <Route path="/feature/:id" element={<Feature />}/>
 
       </Routes>
     </Router>
