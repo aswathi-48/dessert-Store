@@ -125,18 +125,18 @@ const Home = () => {
         </button>
       </section> */}
       <section className="hero">
-  <video autoPlay muted loop playsInline className="hero-video">
-    <source src="/Videos/bg2cake.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-  <h1>🍰 Welcome to <span style={{ color: "#fff0f5", textShadow: "2px 2px #c0392b" }}>SweetTreats</span></h1>
-  <p>Delicious desserts crafted with love. From cupcakes to cheesecakes, we’ve got your sweet cravings covered.</p>
-  <button className="order-btn" onClick={() => {
-    document.getElementById('featured')?.scrollIntoView({ behavior: 'smooth' });
-  }}>
-    Explore Desserts
-  </button>
-</section>
+        <video autoPlay muted loop playsInline className="hero-video">
+          <source src="/Videos/home.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <h1>🍰 Welcome to <span style={{ color: "#fff0f5", textShadow: "2px 2px #c0392b" }}>SweetTreats</span></h1>
+        <p>Delicious desserts crafted with love. From cupcakes to cheesecakes, we’ve got your sweet cravings covered.</p>
+        <button className="order-btn" onClick={() => {
+          document.getElementById('featured')?.scrollIntoView({ behavior: 'smooth' });
+        }}>
+          Explore Desserts
+        </button>
+      </section>
 
 
 
