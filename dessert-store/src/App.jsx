@@ -23,7 +23,7 @@ function App() {
           <Route path="/dessert/:name" element={<MenuDetails />} />
         </Route>
         <Route path="/data" element={<Test />} />
-         <Route path="/feature/:id" element={<Feature />}/>
+         {/* <Route path="/feature/:id" element={<Feature />}/> */}
 
       </Routes>
     </Router>
