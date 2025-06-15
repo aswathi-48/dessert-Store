@@ -99,13 +99,17 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './Home.css';
 import { FaWhatsapp } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 
 
 const Home = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
- const featuredDesserts = [
+
+    const navigate = useNavigate();
+
+  const featuredDesserts = [
     {
       id: 'chocolate-cake',
       name: 'Chocolate Cake',
@@ -128,7 +132,7 @@ const Home = () => {
 
   return (
     <div className="home-page">
-  
+
       <section className="hero">
         <video autoPlay muted loop playsInline className="hero-video">
           <source src="/Videos/home.mp4" type="video/mp4" />
@@ -184,22 +188,22 @@ const Home = () => {
         </div>
       </section> */}
 
-       <section className="featured" id="featured">
-      <h2>Our Favorites</h2>
-      <div className="dessert-grid">
-        {featuredDesserts.map((dessert) => (
-          <div
-            key={dessert.id}
-            className="dessert-card"
-            onClick={() => navigate(`/feature/${dessert.id}`, { state: dessert })}
-            style={{ cursor: 'pointer' }}
-          >
-            <img src={dessert.img} alt={dessert.name} />
-            <h3>{dessert.name}</h3>
-          </div>
-        ))}
-      </div>
-    </section>
+      <section className="featured" id="featured">
+        <h2>Our Favorites</h2>
+        <div className="dessert-grid">
+          {featuredDesserts.map((dessert) => (
+            <div
+              key={dessert.id}
+              className="dessert-card"
+              onClick={() => navigate(`/feature/${dessert.id}`, { state: dessert })}
+              style={{ cursor: 'pointer' }}
+            >
+              <img src={dessert.img} alt={dessert.name} />
+              <h3>{dessert.name}</h3>
+            </div>
+          ))}
+        </div>
+      </section>
 
       {/* Next Menu Section */}
       <section className="next-menu">
