@@ -1,0 +1,30 @@
+.feature-page {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-content {
+  display: flex;
+  gap: 40px;
+  max-width: 900px;
+  align-items: center;
+}
+
+.feature-img {
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.feature-details h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.feature-price {
+  color: #ff4d6d;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
