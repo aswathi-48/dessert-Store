@@ -22,9 +22,9 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="specials" element={<Specials />} />
           <Route path="/dessert/:name" element={<MenuDetails />} />
+         <Route path="/feature/:id" element={<Feature />}/>
         </Route>
         <Route path="/data" element={<Test />} />
-         <Route path="/feature/:id" element={<Feature />}/>
 
       </Routes>
     </Router>
