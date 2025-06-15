@@ -13,7 +13,7 @@
   .contact-container {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
     margin-top: 30px;
   }
   
@@ -27,7 +27,7 @@
   
   .contact-form input,
   .contact-form textarea {
-    width: 100%;
+    width: 96%;
     padding: 12px;
     margin: 10px 0;
     border: 1px solid #ddd;
