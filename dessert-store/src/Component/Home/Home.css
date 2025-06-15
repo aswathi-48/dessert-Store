@@ -179,7 +179,7 @@
 }
 
 /* Hero Section */
-.hero {
+/* .hero {
   position: relative;
   text-align: center;
   padding: 120px 30px;
@@ -196,9 +196,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 105, 135, 0.35); /* soft pink overlay */
+  background: rgba(255, 105, 135, 0.35); 
   z-index: 0;
-}
+} */
+
 
 .hero h1 {
   font-size: 3rem;
