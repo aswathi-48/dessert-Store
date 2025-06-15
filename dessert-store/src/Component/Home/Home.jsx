@@ -157,8 +157,6 @@ const Home = () => {
           <img src="/Images/desserts8.jpg" alt="Cake5" className="marquee-img" />
           <img src="/Images/desser9.jpg" alt="Cake5" className="marquee-img" />
 
-
-
         </marquee>
       </section>
 
