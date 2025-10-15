@@ -132,7 +132,7 @@ const Home = () => {
 
   return (
     <div className="home-page">
-
+{/* 
       <section className="hero">
         <video autoPlay muted loop playsInline className="hero-video">
           <source src="/Videos/home.mp4" type="video/mp4" />
@@ -141,6 +141,19 @@ const Home = () => {
         <h1>🍰 Welcome to <span style={{ color: "#80ce85ff", textShadow: "2px 2px #284825ff" }}>SweetTreats</span></h1>
         <p>Delicious desserts crafted with love. From cupcakes to cheesecakes, we’ve got your sweet cravings covered.</p>
         <button style={{backgroundColor:'#72a17f'}} className="order-btn" onClick={() => {
+          document.getElementById('featured')?.scrollIntoView({ behavior: 'smooth' });
+        }}>
+          Explore Desserts
+        </button>
+      </section> */}
+ <section className="hero">
+        <video autoPlay muted loop playsInline className="hero-video">
+          <source src="/Videos/home.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <h1>🍰 Welcome to <span style={{ color: "#f9877cff", textShadow: "2px 2px #fd5849ff" }}>SweetTreats</span></h1>
+        <p>Delicious desserts crafted with love. From cupcakes to cheesecakes, we’ve got your sweet cravings covered.</p>
+        <button style={{backgroundColor:'#ff6f61'}} className="order-btn" onClick={() => {
           document.getElementById('featured')?.scrollIntoView({ behavior: 'smooth' });
         }}>
           Explore Desserts
