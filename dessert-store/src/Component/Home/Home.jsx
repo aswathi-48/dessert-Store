@@ -93,46 +93,44 @@
 
 // export default Home;
 
-
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import './Home.css';
-import { FaWhatsapp } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom';
-
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "./Home.css";
+import { FaWhatsapp } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
 
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const featuredDesserts = [
     {
-      id: 'chocolate-cake',
-      name: 'Chocolate Cake',
-      img: '/Images/cake.jpg',
+      id: "chocolate-cake",
+      name: "Chocolate Cake",
+      img: "/Images/cake.jpg",
       price: 299,
     },
     {
-      id: 'vanilla-cupcake',
-      name: 'Vanilla Cupcake',
-      img: '/Images/cupcake2.jpg',
+      id: "vanilla-cupcake",
+      name: "Vanilla Cupcake",
+      img: "/Images/cupcake2.jpg",
       price: 149,
     },
     {
-      id: 'strawberry-icecream',
-      name: 'Strawberry Ice Cream',
-      img: '/Images/desserts4.jpg',
+      id: "strawberry-icecream",
+      name: "Strawberry Ice Cream",
+      img: "/Images/desserts4.jpg",
       price: 199,
     },
   ];
 
   return (
     <div className="home-page">
-{/* 
+      {/* 
       <section className="hero">
         <video autoPlay muted loop playsInline className="hero-video">
           <source src="/Videos/home.mp4" type="video/mp4" />
@@ -146,22 +144,33 @@ const Home = () => {
           Explore Desserts
         </button>
       </section> */}
- <section className="hero">
+      <section className="hero">
         <video autoPlay muted loop playsInline className="hero-video">
           <source src="/Videos/home.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <h1>🍰 Welcome to <span style={{ color: "#f9877cff", textShadow: "2px 2px #fd5849ff" }}>SweetTreats</span></h1>
-        <p>Delicious desserts crafted with love. From cupcakes to cheesecakes, we’ve got your sweet cravings covered.</p>
-        <button style={{backgroundColor:'#ff6f61'}} className="order-btn" onClick={() => {
-          document.getElementById('featured')?.scrollIntoView({ behavior: 'smooth' });
-        }}>
+        <h1>
+          🍰 Welcome to{" "}
+          <span style={{ color: "#f9877cff", textShadow: "2px 2px #fd5849ff" }}>
+            SweetTreats
+          </span>
+        </h1>
+        <p>
+          Delicious desserts crafted with love. From cupcakes to cheesecakes,
+          we’ve got your sweet cravings covered.
+        </p>
+        <button
+          style={{ backgroundColor: "#ff6f61" }}
+          className="order-btn"
+          onClick={() => {
+            document
+              .getElementById("featured")
+              ?.scrollIntoView({ behavior: "smooth" });
+          }}
+        >
           Explore Desserts
         </button>
       </section>
-
-
-
 
       {/* Scrolling Images */}
       <section className="marquee-section">
@@ -171,14 +180,37 @@ const Home = () => {
           <img src="/Images/cupcake2.jpg" alt="Cake3" className="marquee-img" />
           <img src="/Images/dessert.jpg" alt="Cake4" className="marquee-img" />
           <img src="/Images/dessert1.jpg" alt="Cake5" className="marquee-img" />
-          <img src="/Images/desserts4.jpg" alt="Cake5" className="marquee-img" />
-          <img src="/Images/desserts3.jpg" alt="Cake5" className="marquee-img" />
-          <img src="/Images/desserts5.jpg" alt="Cake5" className="marquee-img" />
-          <img src="/Images/desserts6.jpg" alt="Cake5" className="marquee-img" />
-          <img src="/Images/desserts7.jpg" alt="Cake5" className="marquee-img" />
-          <img src="/Images/desserts8.jpg" alt="Cake5" className="marquee-img" />
+          <img
+            src="/Images/desserts4.jpg"
+            alt="Cake5"
+            className="marquee-img"
+          />
+          <img
+            src="/Images/desserts3.jpg"
+            alt="Cake5"
+            className="marquee-img"
+          />
+          <img
+            src="/Images/desserts5.jpg"
+            alt="Cake5"
+            className="marquee-img"
+          />
+          <img
+            src="/Images/desserts6.jpg"
+            alt="Cake5"
+            className="marquee-img"
+          />
+          <img
+            src="/Images/desserts7.jpg"
+            alt="Cake5"
+            className="marquee-img"
+          />
+          <img
+            src="/Images/desserts8.jpg"
+            alt="Cake5"
+            className="marquee-img"
+          />
           <img src="/Images/desser9.jpg" alt="Cake5" className="marquee-img" />
-
         </marquee>
       </section>
 
@@ -208,8 +240,10 @@ const Home = () => {
             <div
               key={dessert.id}
               className="dessert-card"
-              onClick={() => navigate(`/feature/${dessert.id}`, { state: dessert })}
-              style={{ cursor: 'pointer' }}
+              onClick={() =>
+                navigate(`/feature/${dessert.id}`, { state: dessert })
+              }
+              style={{ cursor: "pointer" }}
             >
               <img src={dessert.img} alt={dessert.name} />
               <h3>{dessert.name}</h3>
@@ -250,7 +284,9 @@ const Home = () => {
           <div className="special-content" data-aos="fade-left">
             <h2>Special Treat of the Month</h2>
             <p>
-              Indulge in our exclusive Red Velvet Cheesecake — a perfect blend of creaminess and richness topped with luscious strawberries. Limited time only!
+              Indulge in our exclusive Red Velvet Cheesecake — a perfect blend
+              of creaminess and richness topped with luscious strawberries.
+              Limited time only!
             </p>
             <button className="order-btn">Order Now</button>
           </div>
@@ -264,9 +300,6 @@ const Home = () => {
     >
       <FaWhatsapp />
     </a> */}
-
-
-
     </div>
   );
 };
